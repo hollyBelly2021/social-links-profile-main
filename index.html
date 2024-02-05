@@ -16,6 +16,8 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@;300;400;600;700&display=swap');
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -43,6 +45,9 @@
         height: 90vh;
         align-items: center;
         justify-content: center;
+
+        font-family: 'Inter', sans-serif;
+        color: hsl(0, 0%, 100%)
       }
 
       .container{
@@ -57,6 +62,10 @@
         flex-direction: column;
         align-items: center;
 
+        padding:0px 20px 40px 20px;;
+
+        gap: 25px;
+
       }
 
       .header-styles{
@@ -65,9 +74,58 @@
         
         align-items: center;
         
-        margin-top: 20px;
+        margin-top: 45px;
 
-        gap: 10px
+        gap: 10px;
+      }
+
+      .name-style{
+        font-weight: 400;
+        letter-spacing: 0.5px;
+      }
+
+      .address-style{
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+
+
+        color:hsl(75, 94%, 57%)
+      }
+      .desc-styles{
+        font-size: 15px;
+      }
+
+      .link-styles{
+        display: flex;
+        flex-direction: column;
+        /* background-color: grey; */
+        flex-grow: 1;
+        justify-content: space-between;
+        /* gap: 20px; */
+
+      }
+
+      .links{
+        display: flex;
+        width: 300px;
+        flex-basis: 40px;
+        background-color: hsl(0, 0%, 20%);
+
+        justify-content: center;
+        align-items: center;
+
+        font-size: 11px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+
+        border-radius: 8px;
+      }
+
+      .links:hover{
+        background-color:hsl(75, 94%, 57%);
+        cursor: pointer;
+        color:hsl(0, 0%, 8%)
       }
     </style>
   </head>
@@ -77,9 +135,18 @@
       <section class="container">
         <header class="header-styles">
           <img src="assets/images/avatar-jessica.jpeg" alt="">
-          <h1> Jessica Randall</h1>
-          <p>London, United Kingdom</p>
+          <h1 class="name-style"> Jessica Randall</h1>
+          <p class="address-style">London, United Kingdom</p>
         </header>
+        <p class="desc-styles">"Front-end developer and avid reader."</p>
+        <div class="link-styles">
+          <div class="links">GitHub</div>
+          <div class="links">Frontend Mentor</div>
+          <div class="links">LinkedIn</div>
+          <div class="links">Twitter</div>
+          <div class="links">Instagram</div>
+        </div>
+
        
 
       </section>
